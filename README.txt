@@ -62,6 +62,6 @@ Included in this folder is chromedriver.exe. This is a webdriver for selenium
 to work though. In order to work with another browser, selenium needs the 
 compatable web driver for your browser. To use a different browser, find the 
 corresponding web driver (for Firefox, selenium is natively supported, so there
-is a plugin instead) and in zoom_codes.py, on line 40 is
+is a plugin instead) and in zoom_codes.py, on line 43 is
 driver = webdriver.Chrome()
 You need to change Chrome to whatever browser you are using. 
