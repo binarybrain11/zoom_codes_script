@@ -10,10 +10,10 @@ except:
 
 
 class meeting:
-    def __init__(self, name, code, password):
-        self.name = "unnamed"
-        self.code = "0"
-        self.password = "0"
+    def __init__(self, name = "unnamed", code = "0", password = "password"):
+        self.name = name
+        self.code = code
+        self.password = password
 
 def main():
     try:
@@ -26,7 +26,8 @@ def main():
     n_meetings = int(codes.readline())
     meetings = []
     for i in range(n_meetings):
-        meetings.append(meeting)
+        temp = meeting()
+        meetings.append(temp)
         meetings[i].name = codes.readline()
         meetings[i].code = codes.readline()
         meetings[i].password = codes.readline()
